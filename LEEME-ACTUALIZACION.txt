@@ -1,0 +1,17 @@
+ESTA ES LA VERSION CORREGIDA PARA ACTUALIZAR TU REPOSITORIO EXISTENTE.
+
+NO EJECUTES git init EN ESTA CARPETA.
+
+1) Descomprime esta carpeta.
+2) Abre ACTUALIZAR_REPOSITORIO.ps1 con PowerShell (clic derecho > Ejecutar con PowerShell).
+3) El script busca automaticamente tu repositorio original app-modulo, comprueba que tiene .git, crea un respaldo, sincroniza main, copia los cambios, hace commit y push.
+4) Luego revisa GitHub > Actions y espera Success.
+
+NO SE COPIAN:
+- .git
+- .env
+- CREDENCIALES_DOCENTES_2026.txt
+- node_modules
+- dist
+
+Esto protege la configuracion Git y evita subir secretos.
